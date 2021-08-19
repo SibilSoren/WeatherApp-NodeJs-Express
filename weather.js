@@ -3,7 +3,7 @@ const http = require("https");
 const bodyParser = require("body-parser");
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(3000, () => {
   console.log("Server is runnig on port 3000");
